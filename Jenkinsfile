@@ -2,23 +2,24 @@ pipeline {
     agent any
     stages {
         stage('build da imagem docker'){
-            stephs{
+            steps{
                 sh 'docker build -t devops/app .'
             }
         }
         stage('subir docker compose - redis e app'){
-            stephs{
+            steps{
                 sh 'docker-compose up --build -d'
             }
         }
         stage('sleep para subida de containers'){
-            stephs{
+            steps{
                 sh 'sleep 10'
             }
         }
         stage('teste da aplicação'){
-            stephs{
-                sh 'teste-app.sh'
+            steps{
+                sh 'chmod +x teste-app.sh'
+                sh './teste-app.sh'
             }
         }
     }
