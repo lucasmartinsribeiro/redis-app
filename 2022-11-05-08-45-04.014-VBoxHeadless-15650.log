@@ -1,0 +1,12 @@
+Log created: 2022-11-05T08:45:04.145543000Z
+Process ID:  15650 (0x3d22)
+Parent PID:  14750 (0x399e)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: lab-jenkins_default_1667398707005_50156
+Arg[3]: --startvm
+Arg[4]: cd72602e-a4c2-41b0-b815-ef9892f4df6a
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
